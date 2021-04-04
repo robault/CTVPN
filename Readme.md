@@ -12,7 +12,7 @@ It has been opened and upgraded to .Net 4.6.1 in Visual Studio 2019 Community Ed
 The project has been scrubbed but let's hypothetically say you actually want to run this (and assuming it still can in 2021), replace these values in the solution:
 
 * <user_name> (used for app and dadtabase access)
-* <password> (same ^)
+* \<password> (same ^)
 * 'Company Name' (with your company name)
 * <web_service_ip_or_domain_name> (Settings.settings needs edited outside Visual Studio, or chose a different editor)
 * <encryption_salt> (I used a guid)
