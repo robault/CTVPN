@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://<web_service_ip_or_domain_name>/vpn/CTVPN_WebService.asmx?wsdl" docRef="http://<web_service_ip_or_domain_name>/vpn/CTVPN_WebService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://<web_service_ip_or_domain_name>/vpn/CTVPN_WebService.asmx" xmlns:q1="http://<web_service_ip_or_domain_name>/" binding="q1:StateSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://<web_service_ip_or_domain_name>/vpn/CTVPN_WebService.asmx" xmlns:q2="http://<web_service_ip_or_domain_name>/" binding="q2:StateSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

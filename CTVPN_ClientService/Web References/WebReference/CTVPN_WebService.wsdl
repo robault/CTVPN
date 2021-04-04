@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://<web_service_ip_or_domain_name>/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://<web_service_ip_or_domain_name>/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://<web_service_ip_or_domain_name>/">
+      <s:element name="Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ResponseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ResponseResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ResponseSoapIn">
+    <wsdl:part name="parameters" element="tns:Response" />
+  </wsdl:message>
+  <wsdl:message name="ResponseSoapOut">
+    <wsdl:part name="parameters" element="tns:ResponseResponse" />
+  </wsdl:message>
+  <wsdl:portType name="StateSoap">
+    <wsdl:operation name="Response">
+      <wsdl:input message="tns:ResponseSoapIn" />
+      <wsdl:output message="tns:ResponseSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="StateSoap" type="tns:StateSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Response">
+      <soap:operation soapAction="http://<web_service_ip_or_domain_name>/Response" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="StateSoap12" type="tns:StateSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Response">
+      <soap12:operation soapAction="http://<web_service_ip_or_domain_name>/Response" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="State">
+    <wsdl:port name="StateSoap" binding="tns:StateSoap">
+      <soap:address location="http://<web_service_ip_or_domain_name>/vpn/CTVPN_WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="StateSoap12" binding="tns:StateSoap12">
+      <soap12:address location="http://<web_service_ip_or_domain_name>/vpn/CTVPN_WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

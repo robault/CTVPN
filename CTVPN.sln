@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTVPN_ClientApplication", "CTVPN_ClientApplication\CTVPN_ClientApplication.csproj", "{CC38EE62-A46C-4A8D-9AF7-F269CB0565FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTVPN_ClientService", "CTVPN_ClientService\CTVPN_ClientService.csproj", "{D991F612-E03B-46D1-AC57-61D1561C75B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTVPN_WebApplication", "CTVPN_WebApplication\CTVPN_WebApplication.csproj", "{CA0CE912-ED02-4FAB-9F00-0F75310B20DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTVPN_WebService", "CTVPN_WebService\CTVPN_WebService.csproj", "{157D17E2-8321-4585-97E0-C4EF5AB6A1C9}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CTPVN_ClientSetup", "CTPVN_ClientSetup\CTPVN_ClientSetup.vdproj", "{33206CFA-96EC-45F3-B6D3-203FC1896B72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{269A6196-36EB-4C53-90BE-C414EA4244EC}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC38EE62-A46C-4A8D-9AF7-F269CB0565FA}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{CC38EE62-A46C-4A8D-9AF7-F269CB0565FA}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{CC38EE62-A46C-4A8D-9AF7-F269CB0565FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC38EE62-A46C-4A8D-9AF7-F269CB0565FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D991F612-E03B-46D1-AC57-61D1561C75B5}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{D991F612-E03B-46D1-AC57-61D1561C75B5}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{D991F612-E03B-46D1-AC57-61D1561C75B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D991F612-E03B-46D1-AC57-61D1561C75B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA0CE912-ED02-4FAB-9F00-0F75310B20DB}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{CA0CE912-ED02-4FAB-9F00-0F75310B20DB}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{CA0CE912-ED02-4FAB-9F00-0F75310B20DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA0CE912-ED02-4FAB-9F00-0F75310B20DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{157D17E2-8321-4585-97E0-C4EF5AB6A1C9}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{157D17E2-8321-4585-97E0-C4EF5AB6A1C9}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{157D17E2-8321-4585-97E0-C4EF5AB6A1C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{157D17E2-8321-4585-97E0-C4EF5AB6A1C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33206CFA-96EC-45F3-B6D3-203FC1896B72}.Debug|Any CPU.ActiveCfg = Release
+		{33206CFA-96EC-45F3-B6D3-203FC1896B72}.Debug|Any CPU.Build.0 = Release
+		{33206CFA-96EC-45F3-B6D3-203FC1896B72}.Release|Any CPU.ActiveCfg = Release
+		{33206CFA-96EC-45F3-B6D3-203FC1896B72}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74DF7197-F1C4-4120-80BD-DC9B43A76E04}
+	EndGlobalSection
+EndGlobal
